@@ -24,12 +24,10 @@ PUT | /item/:id| id | name, price, status | Item | o | o | x
 DELETE | /item/:id| id | - | Item | o | o | x
 
 
-### users
-Nama Atribut | Tipe Data | Contoh
----|---|---
-User ID | String | oiu214oi2hfmlnoi39
-Email | String | johndoe@example.com
-Nama User | String | John Doe
-
+### auth
+Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
+---|---|---|---|---|---|---|---
+POST | /login | - | - | All User | o | o | o
+POST | /register | - | - | All USer | o | o | o
 
 ## Mockup UX
