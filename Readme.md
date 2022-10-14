@@ -15,7 +15,7 @@ Membuat suatu media dimana user dapat mengunggah kondisi di suatu wilayah dengan
 
 ### Order
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
----|---|---
+---|---|---|---|---|---|---|---
 GET | /order | - | - | All Order | o | o | x
 
 
