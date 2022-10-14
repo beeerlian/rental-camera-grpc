@@ -1,17 +1,10 @@
 # Judul Aplikasi
-...
-
-## Deskripsi Masalah
-Sulitnya orang untuk mengetahui kondisi rute ke tempat yang akan dituju
-
-## Deskripsi Solusi
-Membuat suatu media dimana user dapat mengunggah kondisi di suatu wilayah dengan keterangan waktu, foto, deskripsi,  dan titik lokasi
+Aplikasi Sewa Kamera 
 
 ## Use Case
-- User 1 dapat mengunggah kondisi di suatu wilayah
-- User 2 dapat mengetahui unggahan User 1 berdasarkan lokasi yang dicari, daftar unggahan disortir berdasarkan unggahan terbaru
-
-## Struktur Data
+- Super Admin 1 dapat mengakses seluruh service yang ada pada aplikasi.
+- Admin 1 hanya dapat mengakses service hampir semua service kecuali register admin.
+- Customer 2 dapat melihat data item (kamera) yang tersedia. Dan melakukan transaksi.
 
 ### Order
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
@@ -19,16 +12,15 @@ Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
 GET | /order | - | - | All Order | o | o | x
 
 
-### posts
-Nama Atribut | Tipe Data | Contoh
----|---|---
-ID Post | String | w098jiowfjeu213hdzxn
-Pengunggah | String | johndoe@example.com
-Nama Tempat | String | Jalan Raya Pangalengan
-Kategori | int | 4
-Deskripsi | String | Pukul 10:20, kemacetan masih terjadi dari wilayah Kamasan hingga wilayah Cimaung
-Waktu | DateTime | 2022-06-12 08:23:12
-🌏 Koordinat | poin | [106.03794 -6.39284693]
+### Items
+Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
+---|---|---|---|---|---|---|---
+GET | /item | - | - | All Item | o | o | o
+GET | /item/:id | id | - | Item | o | o | o
+POST | /item | - | name, price, status | Item | o | o | x
+PUT | /item/:id| id | name, price, status | Item | o | o | x
+DELETE | /item/:id| id | - | Item | o | o | x
+
 
 ### users
 Nama Atribut | Tipe Data | Contoh
