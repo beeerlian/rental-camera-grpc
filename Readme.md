@@ -27,6 +27,6 @@ DELETE | /item/:id| id | - | Item | o | o | x
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
 ---|---|---|---|---|---|---|---
 POST | /login | - | - | All User | o | o | o
-POST | /register | - | - | All USer | o | o | o
+POST | /register | - | email, password, name, address, phone, role, identity_type, identity_number | All User | o | o | o
 
 ## Mockup UX
