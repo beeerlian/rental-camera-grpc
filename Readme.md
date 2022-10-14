@@ -31,5 +31,11 @@ User ID | String | oiu214oi2hfmlnoi39
 Email | String | johndoe@example.com
 Nama User | String | John Doe
 
+### Transaction
+Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
+---|---|---|---|---|---|---|---
+GET | /transaction | - | - | All Transaction | o | o | x
+POST | /transaction | - | order_id, teller_id | Transaction | o | o | x
+GET | /transaction/:id | id | - | Transaction | o | o | x
 
 ## Mockup UX
