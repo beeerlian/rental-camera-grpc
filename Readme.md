@@ -1,10 +1,7 @@
-# Judul Aplikasi
-Aplikasi Sewa Kamera 
+# Aplikasi Sewa Kamera 
 
-## Use Case
-- Super Admin 1 dapat mengakses seluruh service yang ada pada aplikasi.
-- Admin 1 hanya dapat mengakses service hampir semua service kecuali register admin.
-- Customer 2 dapat melihat data item (kamera) yang tersedia. Dan melakukan transaksi.
+### Architecture
+
 
 ### Order
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
@@ -23,13 +20,6 @@ PUT | /item/:id| id | name, price, status | Item | o | o | x
 DELETE | /item/:id| id | - | Item | o | o | x
 
 
-### users
-Nama Atribut | Tipe Data | Contoh
----|---|---
-User ID | String | oiu214oi2hfmlnoi39
-Email | String | johndoe@example.com
-Nama User | String | John Doe
-
 ### Transaction
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
 ---|---|---|---|---|---|---|---
@@ -38,10 +28,8 @@ POST | /transaction | - | order_id, teller_id | Transaction | o | o | x
 GET | /transaction/:id | id | - | Transaction | o | o | x
 
 
-### auth
+### Auth
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
 ---|---|---|---|---|---|---|---
-POST | /login | - | - | All User | o | o | o
+POST | /login | - | - | User Login Data, Access Token | o | o | o
 POST | /register | - | email, password, name, address, phone, role, identity_type, identity_number | All User | o | o | o
-
-## Mockup UX
