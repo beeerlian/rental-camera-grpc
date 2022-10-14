@@ -1,6 +1,7 @@
 # Aplikasi Sewa Kamera 
 
 ### Architecture
+![alt text](https://github.com/beeerlian/rental-camera-grpc/blob/master/assets/architecture.png?raw=true)
 
 
 ### Order
@@ -31,5 +32,5 @@ GET | /transaction/:id | id | - | Transaction | o | o | x
 ### Auth
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
 ---|---|---|---|---|---|---|---
-POST | /login | - | - | User Login Data, Access Token | o | o | o
+POST | /login | - | email, password | User Login Data, Access Token | o | o | o
 POST | /register | - | email, password, name, address, phone, role, identity_type, identity_number | All User | o | o | o
