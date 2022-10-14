@@ -101,7 +101,7 @@ exports.get = (req, res) => {
        });
 }
 
-exports.getAll = async (req, res) => {
+exports.getAll = (req, res) => {
        let request = new messages.Empty();
        client.list(request, function (err, response) {
               if (err) {

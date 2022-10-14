@@ -1,4 +1,4 @@
-module.exports = (req, res, next) => {
+const verify = (req, res, next) => {
        const role = req.user.role;
        switch (req.route.path) {
               case "/item":
@@ -18,6 +18,40 @@ module.exports = (req, res, next) => {
        }
        next();
 }
+
+const customer = (req, res, next) => {
+       const role = req.user.role;
+       if (role === "CUSTOMER") {
+              sendErrorResponse(res, role);
+       }
+       else {
+              next()
+       }
+}
+
+const superAdmin = (req, res, next) => {
+       const role = req.user.role;
+       if (role === "SUPER_ADMIN") {
+              sendErrorResponse(res, role);
+       }
+       else {
+              next()
+       }
+}
+
+const admin = (req, res, next) => {
+       const role = req.user.role;
+       if (role === "ADMIN") {
+              sendErrorResponse(res, role);
+       }
+       else {
+              next()
+       }
+}
+
+module.exports = { verify, ban: { customer, superAdmin, admin } }
+
+
 
 function sendErrorResponse(res, role) {
        return res.status(402).send({
