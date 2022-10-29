@@ -14,10 +14,10 @@ User and Item Service | [Check](https://github.com/aziznurulloh8910/api-sewa-kam
 ![alt text](https://github.com/beeerlian/rental-camera-grpc/blob/master/assets/architecture.png?raw=true)
 
 ### Members
-1. Naufal Berlian Taufiqurrohman
-2. Andre Aditya Yanwar
-3. Cahya Edriansa
-4. Aziz Nurulloh
+1. Naufal Berlian Taufiqurrohman (1197050094)
+2. Andre Aditya Yanwar (1197050016)
+3. Cahya Edriansa (1197050025)
+4. Aziz Nurulloh (1197050023)
 
 ### Tasks
 1. User & Item Service (Aziz Nurulloh, Naufal Berlian T) (Laravel, MySQL)
