@@ -3,10 +3,10 @@
 ### Repositories
 Service | Repositories
 ---|---
-Transaction Service | [a link](https://github.com/beeerlian/cr-order-trans-be)
-Auth Service | [a relative link](auth-service)
-Order Service | [a relative link](order-service)
-User and Item Service | [a link](https://github.com/aziznurulloh8910/api-sewa-kamera)
+Transaction Service | [Check](https://github.com/beeerlian/cr-order-trans-be)
+Auth Service | [Check](auth-service)
+Order Service | [Check](order-service)
+User and Item Service | [Check](https://github.com/aziznurulloh8910/api-sewa-kamera)
 
 
 
