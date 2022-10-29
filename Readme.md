@@ -38,6 +38,7 @@ User and Item Service | [Check](https://github.com/aziznurulloh8910/api-sewa-kam
 4. Google Protobuf
 5. Sequelize ORM
 6. JSON Webtoken
+7. Express JS
 
 ### Order
 Method | Route | Parameter | Body | Response | Super Admin | Admin | Customer
