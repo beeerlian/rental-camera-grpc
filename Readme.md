@@ -22,7 +22,7 @@ User and Item Service | [Check](https://github.com/aziznurulloh8910/api-sewa-kam
 ### Tasks
 1. User & Item Service (Aziz Nurulloh, Naufal Berlian T) (Laravel, MySQL)
 2. Order Service (Naufal Berlian T, Cahya Edriansa) (Node JS, MySQL, GRPC)
-3. Transaction Service (Naufal Berlian T, Cahya Edriansa) (Node JS, MySQL)
+3. Transaction Service (Naufal Berlian T) (Node JS, MySQL)
 3. Authentication and Authorization Service (Naufal Berlian T, Andre Aditya yanwar) (Node JS, MySQL)
 
 ### Stack Technology
